@@ -1,0 +1,69 @@
+h1,h2,h3,h4{
+    margin: 0%;
+}
+body {
+ background-color: beige;
+}
+.container{
+    display: flex;
+}
+.box{
+    background-color: white;
+    width: 400px;
+    margin-right: 20;
+    box-shadow: 0 0 10 black;
+}
+.title{
+    background-color: black;
+    color: white;
+    padding: 10;
+    font-size: 20;
+    text-align: center;
+}
+.fields{
+    padding: 10 20;
+    display: flex;
+    justify-content:space-between ;
+}
+.fields > label {
+    font-size: 18;
+}
+.btn{
+    padding: 8 18;
+    background-color: rgb(64, 141, 141);
+    border: 2 solid ;
+    border-color: rgb(16, 153, 153);
+    color: white;
+    cursor: pointer;
+}
+.btn1{
+    padding: 8 18;
+    background-color: rgb(233, 63, 63);
+    border: 2 solid;
+    border-color: rgb(214, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.btn.print{
+margin-top: 10;
+}
+.buttoncontainer{
+    padding: 10 20;
+}
+.ml{
+    margin-left: 10;
+}
+@media print{
+    body {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .forminput{
+        display: none;
+    }
+    .card{
+        visibility: visible;
+    }
+}

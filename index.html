@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="box formInput">
+            <h3 class="title">Student Detailes </h3>
+            <form>
+                <div class="fields">
+                    <label for="schoolName">School Name:</label>
+                    <input id="schoolName"/>
+                </div>
+                <div class="fields">
+                    <label for="studentName">Student Name:</label>
+                    <input id="studentName"/>
+                </div>
+                <div class="fields">
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input id="dateOfBirth"/>
+                </div>
+                <div class="fields">
+                    <label for="class">Class:</label>
+                    <input id="class"/>
+                </div>
+                <div class="fields">
+                    <label for="rollNumber">Roll Number:</label>
+                    <input id="rollNumber" type="number"/>
+                </div>
+                <div class="fields">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input id="contactNumber" type="number"/>
+                </div>
+                <div class="buttonContainer">
+                    <button class="btn" type="button" onclick="updateCard()">Sumbit Form</button>
+                    <button class="btn1 ml" type="reset">Clear All</button>
+                </div>
+            </form>
+        </div>
+        <div class="box card">
+            <h3 class="title" id="schoolNameVal">School Name</h3>
+        <div class="fields">
+            <label>Student Name</label>
+            <label id="studentNameVal">abc</label>
+        </div>
+        <div class="fields">
+            <label>Date of Birth</label>
+            <label id="dateOfbirthVal">2/2/2014</label>
+        </div>
+        <div class="fields">
+            <label>Class</label>
+            <label id="classVal">8</label>
+        </div>
+        <div class="fields">
+            <label>Roll Number</label>
+            <label id="rollNumberVal">21</label>
+        </div>
+        <div class="fields">
+            <label>Contact Number</label>
+            <label id="contactNumberVal">4545445</label>
+        </div>
+        <div class="buttonContainer">
+        <button class="btn print" type="button" onclick="printIdCard()">Print Id Card</button>
+        </div>
+        </div>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
